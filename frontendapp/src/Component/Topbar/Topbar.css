@@ -4,13 +4,13 @@
     justify-content: space-between;
     height: 60px;
     padding: 0 20px;
-    background-color: grey;
     color: #fff;
+    position: fixed;
   }
   
   .logo {
     font-size: 24px;
-    color: black;
+    color:  #96bf48 ;
     font-weight: bold;
   }
   

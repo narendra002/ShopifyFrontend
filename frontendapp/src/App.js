@@ -1,13 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import Topbar from './Component/Topbar/Topbar';
-import Sidebar from './Component/Sidebar/Sidebar';
+import CustomerList from './Component/CustomerList/CustomerList';
+import Topbar from "./Component/Topbar/Topbar"
+import Sidebar from "./Component/Sidebar/Sidebar"
+import Customer from './Component/CustomerDetail/Customer'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
-  return (
-    <div className="App">
-     <Topbar/>
-     <Sidebar/>
-    </div>
+  return (<>
+    <Router>
+      <Topbar/>
+ 
+<div className='container'>
+  <Sidebar/>
+    <CustomerList/>
+   </div>
+
+      <Routes>
+        <Route  path="/Customer_Detail" element={<Customer/>} />
+      </Routes>
+    </Router>
+    </>
   );
 }
 
