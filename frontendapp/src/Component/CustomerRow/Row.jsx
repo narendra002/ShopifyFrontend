@@ -1,11 +1,11 @@
 import React from "react";
 import './Row.css'
 
-const Row = ({ name, email, imageUrl, onDetail }) => {
+const Row = ({ name, email, imageUrl, onDetail, customer }) => {
   const handleDetailClick = () => {
-    onDetail();
+    onDetail(customer);
   };
-
+console.log(customer)
   return (
     <div className="card">
       <img src={imageUrl} alt={name} />
